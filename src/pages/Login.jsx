@@ -15,7 +15,7 @@ export default function Login(props) {
           Accept: 'application/json',
           'Content-Type': 'application/json',
         },
-        credentials: true,
+        credentials: 'include',
         body: JSON.stringify({
           username: loginUsername,
           password: loginPassword,

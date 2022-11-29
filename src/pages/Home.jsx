@@ -23,7 +23,7 @@ export default function Home(props) {
           Accept: 'application/json',
           'Content-Type': 'application/json',
         },
-        credentials: true,
+        credentials: 'include',
       }
     )
     getPosts()
