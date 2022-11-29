@@ -88,6 +88,7 @@ export default function CreateChar(props) {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
+      credentials: true,
       body: JSON.stringify({ ...article }),
       //
     })

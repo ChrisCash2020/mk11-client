@@ -115,6 +115,7 @@ export default function UpdateChar(props) {
           Accept: 'application/json',
           'Content-Type': 'application/json',
         },
+        credentials: true,
         body: JSON.stringify({ ...article }),
       }
     )
