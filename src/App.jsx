@@ -62,7 +62,7 @@ function App() {
     <Router>
       <nav className='navbar'>
         <div className='links'>
-          <Link to='/'>MK11 Wiki</Link>
+          <Link to='/mk11-client/'>MK11 Wiki</Link>
           {authState.status ? (
             <div className='loggedInContainer'>
               <h1>{authState.user.username}</h1>
@@ -70,15 +70,15 @@ function App() {
             </div>
           ) : (
             <div className='loggedInContainer'>
-              <Link to='/auth/login'>Login</Link>
-              <Link to='/auth/register'>Register</Link>
+              <Link to='/mk11-client/auth/login'>Login</Link>
+              <Link to='/mk11-client/auth/register'>Register</Link>
             </div>
           )}
         </div>
       </nav>
       <Routes>
         <Route
-          path='/user/update/:postId'
+          path='/mk11-client/user/update/:postId'
           element={
             <UpdateChar
               authState={authState}
@@ -88,7 +88,7 @@ function App() {
           }
         />
         <Route
-          path='/user/create/:userId'
+          path='/mk11-client/user/create/:userId'
           element={
             <CreateChar
               authState={authState}
@@ -96,9 +96,9 @@ function App() {
             />
           }
         />
-        <Route path='/character/:postId' element={<Character />} />
+        <Route path='/mk11-client/character/:postId' element={<Character />} />
         <Route
-          path='/'
+          path='/mk11-client/'
           element={
             <Home
               authState={authState}
@@ -108,7 +108,7 @@ function App() {
           }
         />
         <Route
-          path='/auth/login'
+          path='/mk11-client/auth/login'
           element={
             <Login
               authState={authState}
@@ -117,7 +117,7 @@ function App() {
           }
         />
         <Route
-          path='/auth/register'
+          path='/mk11-client/auth/register'
           element={
             <Register
               authState={authState}

@@ -48,7 +48,7 @@ export default function Home(props) {
           </a>
         )}
         {props.authState.status == true && (
-          <Link to={`/user/update/${post.id}`} className='edit'>
+          <Link to={`/mk11-client/user/update/${post.id}`} className='edit'>
             <CreateIcon />
           </Link>
         )}
@@ -60,7 +60,10 @@ export default function Home(props) {
       <div className='container'>{cards}</div>
       {props.authState.status && (
         <>
-          <Link to={`user/create/${props.authState.user.id}`} id='form-btn'>
+          <Link
+            to={`/mk11-client/user/create/${props.authState.user.id}`}
+            id='form-btn'
+          >
             <AddIcon
               style={{ fontSize: '2.5rem', textShadow: '-1px 1px 0 #000' }}
             />
