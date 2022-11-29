@@ -19,7 +19,6 @@ export default function Login(props) {
           username: loginUsername,
           password: loginPassword,
         }),
-        credentials: 'include',
       }
     )
     let data = await res.json()

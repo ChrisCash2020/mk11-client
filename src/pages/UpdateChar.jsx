@@ -116,7 +116,6 @@ export default function UpdateChar(props) {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ ...article }),
-        credentials: 'include',
       }
     )
     const data = await res.json()

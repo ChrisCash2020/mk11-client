@@ -19,7 +19,6 @@ export default function Register(props) {
           username: registerUsername,
           password: registerPassword,
         }),
-        credentials: 'include',
       }
     )
     let data = await res.json()
