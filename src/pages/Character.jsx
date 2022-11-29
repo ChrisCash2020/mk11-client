@@ -8,7 +8,8 @@ export default function CharacterPage() {
   useEffect(() => {
     async function getPostById() {
       const res = await fetch(
-        `https://crud-mk11-chris.herokuapp.com/posts/${params.postId}`
+        `https://crud-mk11-chris.herokuapp.com/posts/${params.postId}`,
+        { credentials: 'include' }
       )
       const data = await res.json()
       setData(data)

@@ -15,7 +15,8 @@ export default function UpdateChar(props) {
   async function getPostById(id) {
     try {
       const res = await fetch(
-        `https://crud-mk11-chris.herokuapp.com/posts/${id}`
+        `https://crud-mk11-chris.herokuapp.com/posts/${id}`,
+        { credentials: 'include' }
       )
       const data = await res.json()
       setAbout(data.about)

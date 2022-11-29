@@ -25,6 +25,7 @@ function App() {
         headers: {
           Accept: 'application/json',
         },
+        credentials: 'include',
       }
     )
     let data = await res.json()
@@ -41,6 +42,7 @@ function App() {
         headers: {
           Accept: 'application/json',
         },
+        credentials: 'include',
       }
     )
     const data = await res.json()
