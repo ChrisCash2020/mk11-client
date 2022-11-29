@@ -85,7 +85,7 @@ export default function UpdateChar(props) {
   //submit article
   async function UpdateArticle() {
     if (params.postId == 1) {
-      return navigate('/')
+      return navigate(/mk11-client/)
     }
     const filterTrivia = trivia.filter((triv) => triv.text != '')
     const newTrivia = filterTrivia.map((triv) => triv.text.replaceAll('"', "'"))
@@ -121,7 +121,7 @@ export default function UpdateChar(props) {
     )
     const data = await res.json()
     props.setAllPosts(data)
-    navigate('/')
+    navigate(/mk11-client/)
   }
   // : !props.allPosts.some(
   //           (post) => post.userId === props.authState.user.id
