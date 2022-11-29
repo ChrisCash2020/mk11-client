@@ -29,7 +29,7 @@ export default function Register(props) {
         status: true,
         user: data[0],
       })
-      navigate(/mk11-client/)
+      navigate(`/mk11-client/`)
     }
   }
   return (

@@ -98,7 +98,7 @@ export default function CreateChar(props) {
     } else {
       // *** set a new state of the home page posts
       props.setAllPosts(data)
-      navigate(/mk11-client/)
+      navigate(`/mk11-client/`)
     }
   }
 
