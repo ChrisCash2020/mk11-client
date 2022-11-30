@@ -387,6 +387,11 @@ button {
 .padding-bottom {
   padding-bottom: 10px;
 }
+
+input,
+textarea {
+  padding: 5px;
+}
 /**********************/
 /*****Media Query******/
 /**********************/

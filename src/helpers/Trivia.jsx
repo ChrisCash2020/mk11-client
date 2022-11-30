@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 export default function Trivia(props) {
   const trivia = props.trivia
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(trivia.text.length)
   return (
     <div key={trivia.id}>
       <textarea

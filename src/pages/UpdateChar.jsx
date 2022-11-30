@@ -123,7 +123,7 @@ export default function UpdateChar(props) {
     )
     const data = await res.json()
     props.setAllPosts(data)
-    navigate(`/`)
+    setTimeout(navigate(`/`), 3000)
   }
   // : !props.allPosts.some(
   //           (post) => post.userId === props.authState.user.id
