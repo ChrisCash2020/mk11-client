@@ -23,6 +23,7 @@ export default function Home(props) {
           Accept: 'application/json',
           'Content-Type': 'application/json',
         },
+        mode: 'cors',
         credentials: 'include',
       }
     )

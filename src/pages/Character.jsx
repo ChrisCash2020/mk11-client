@@ -9,7 +9,7 @@ export default function CharacterPage() {
     async function getPostById() {
       const res = await fetch(
         `https://crud-mk11-chris.herokuapp.com/posts/${params.postId}`,
-        { credentials: 'include' }
+        { credentials: 'include', mode: 'cors' }
       )
       const data = await res.json()
       setData(data)

@@ -16,7 +16,7 @@ export default function UpdateChar(props) {
     try {
       const res = await fetch(
         `https://crud-mk11-chris.herokuapp.com/posts/${id}`,
-        { credentials: 'include' }
+        { credentials: 'include', mode: 'cors' }
       )
       const data = await res.json()
       setAbout(data.about)
@@ -116,6 +116,7 @@ export default function UpdateChar(props) {
           Accept: 'application/json',
           'Content-Type': 'application/json',
         },
+        mode: 'cors',
         credentials: 'include',
         body: JSON.stringify({ ...article }),
       }

@@ -25,6 +25,7 @@ function App() {
         headers: {
           Accept: 'application/json',
         },
+        mode: 'cors',
         credentials: 'include',
       }
     )
