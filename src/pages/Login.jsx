@@ -28,7 +28,7 @@ export default function Login(props) {
         status: true,
         user: data,
       })
-      navigate(`/mk11-client/`)
+      navigate(`/`)
     } else {
       setFailed(true)
     }
