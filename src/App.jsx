@@ -58,7 +58,7 @@ function App() {
   }
   useEffect(() => {
     checkAuth()
-  }, [setAuthState])
+  }, [allPosts])
   return (
     <Router>
       <nav className='navbar'>

@@ -31,9 +31,6 @@ export default function Home(props) {
   }
   useEffect(() => {
     getPosts()
-  }, [allPosts])
-  useEffect(() => {
-    getPosts()
   }, [])
   const cards = allPosts.map((post, i) => (
     <div className='center' key={nanoid()}>
