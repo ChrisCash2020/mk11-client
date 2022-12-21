@@ -17,24 +17,34 @@ CRUD operations get saved in a JawsDB MySQL database.
 - ExpressJS
 - MySQL
 
-### Front End:
+## Design:
+
+### Client-side:
+
+This is the front-end repository
+
+> Preview
+<p>
+<img src="https://github.com/ChrisCash2020/Images/blob/master/mk11/mk11.gif" />
+</p>
+
+<br/>
+
+> Routes
+<p float="left">
+<img src="https://github.com/ChrisCash2020/Images/blob/master/mk11/home.png" width="500" height="280" />
+<img src="https://github.com/ChrisCash2020/Images/blob/master/mk11/logged.png" width="500" height="280" />
+<img src="https://github.com/ChrisCash2020/Images/blob/master/mk11/create.png" width="500" height="280" />
+<img src="https://github.com/ChrisCash2020/Images/blob/master/mk11/edit.png" width="500" height="280" />
+</p>
+
+<br/>
 
 
-The front-end is hosted on GitHub. 
-This repository is the front-end
-
-### Back End
+### Server-Side:
 
 The back-end repository: <a href="https://github.com/ChrisCash2020/mk11-server1/" target="_blank" >MK11</a>
 
-
-## Design:
-
-### Front-End:
-
-Front End fully developed in ReactJS using Vite
-
-### Server-Side:
 Express server:
   - Module-View-Controller design pattern
   - Manually contructed a User and Posts models each having controllers and routing
