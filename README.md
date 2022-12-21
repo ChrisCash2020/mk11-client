@@ -10,10 +10,6 @@ CRUD operations get saved in a JawsDB MySQL database.
 <br>
 <a href="https://chriscash2020.github.io/mk11-client/" target="_blank" >Live Demo</a>
 
-## Time Taken:
-
-2 weeks
-
 ## Technologies Used:
 
 - ReactJS
