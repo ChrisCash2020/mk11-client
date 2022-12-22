@@ -34,7 +34,10 @@ body {
   justify-content: center;
   min-height: calc(100vh - 170px);
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
+}
+.home {
+  min-height: calc(100vh - 250px);
 }
 .container img {
   width: max(8vw, 190px);
@@ -152,12 +155,10 @@ button.edit {
 }
 
 #create {
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 100px;
-  right: 85px;
+  /* align-content: center; */
   font-family: Metal mania;
   background: #ffffff;
   color: #000000;
@@ -165,18 +166,20 @@ button.edit {
   border-radius: 10px;
   padding: 10px;
   border: #ccc solid 1px;
+  margin-top: 30px;
+  font-size: 1.5rem;
 }
 #create::after {
   content: '';
-  position: absolute;
+  /* position: absolute; */
   display: block;
   width: 0;
   z-index: 1;
   border-style: solid;
   border-color: #ffffff transparent;
   border-width: 10px 6px 0;
-  bottom: -10px;
-  left: 50%;
+  /* bottom: -10px;
+  left: 50%; */
   margin-right: -6px;
 }
 /* posts */
@@ -204,9 +207,11 @@ button.edit {
   font-family: Metal mania;
   letter-spacing: 2px;
 }
-.character-container:hover {
+.character-container:hover,
+#create:hover {
   box-shadow: 0px 15px 20px -15px #fff;
   transform: scale(1.05);
+  cursor: pointer;
 }
 /**********************/
 /****** Main Styles ******/
@@ -438,14 +443,11 @@ textarea {
     width: 50px;
   }
   #create {
-    right: 51%;
     font-size: 0.8rem;
-    height: 30px;
-    bottom: 70px;
   }
   .character-container {
-    width: 180px;
-    height: 180px;
+    width: 250px;
+    height: 250px;
   }
   .character-container h1 {
     font-size: 1.5rem;
@@ -457,6 +459,19 @@ textarea {
     font-size: 0.9em;
   }
 }
+@media (max-width: 414px) {
+  .character-container {
+    width: 190px;
+    height: 190px;
+  }
+  .character-container img {
+    width: 90px;
+    height: 90px;
+  }
+  .home {
+    align-content: space-evenly;
+  }
+}
 @media (max-width: 345px) {
   #character-container-left {
     min-width: 345px;
@@ -464,4 +479,12 @@ textarea {
   #character-container-left ul {
     min-width: 345px;
   }
+
+  /* .character-container img {
+    width: 90px;
+    height: 90px;
+  } */
 }
+/* @media (max-height: 320px){
+
+} */

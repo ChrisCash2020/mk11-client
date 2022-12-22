@@ -39,7 +39,7 @@ function App() {
     const res = await fetch(
       'https://crud-mk11-chris.herokuapp.com/users/auth/logout',
       {
-        method: 'GET',
+        method: 'POST',
         headers: {
           Accept: 'application/json',
         },

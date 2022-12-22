@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import Card from '../helpers/Card'
-import AddIcon from '@mui/icons-material/Add'
 import CreateIcon from '@mui/icons-material/Create'
 import DeleteIcon from '@mui/icons-material/Delete'
 import { Link } from 'react-router-dom'
@@ -58,15 +57,12 @@ export default function Home(props) {
   ))
   return (
     <>
-      <div className='container'>{cards}</div>
+      <div className='container home'>{cards}</div>
       {props.authState.status && (
         <>
-          <Link to={`/user/create/${props.authState.user.id}`} id='form-btn'>
-            <AddIcon
-              style={{ fontSize: '2.5rem', textShadow: '-1px 1px 0 #000' }}
-            />
+          <Link id='create' to={`/user/create/${props.authState.user.id}`}>
+            Create
           </Link>
-          <div id='create'>create</div>
         </>
       )}
     </>
