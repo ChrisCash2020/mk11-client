@@ -17,6 +17,12 @@ CRUD operations get saved in a JawsDB MySQL database.
 - ExpressJS
 - MySQL
 
+## Top Features:
+- Bcrypt password encryption/verification
+- Multer file upload of character images
+- Session cookies authentication and authorization
+- Bcrypt password encryption/verification
+
 ## Design:
 
 ### Client-side:
@@ -46,9 +52,10 @@ This is the front-end repository
 The back-end repository: <a href="https://github.com/ChrisCash2020/mk11-server1/" target="_blank" >MK11</a>
 
 Express server:
-  - Module-View-Controller design pattern
-  - Manually contructed a User and Posts models each having controllers and routing
-  - In-house SQL queries used to facillitate database requests
+  - Module-View-Controller project structure
+  - Manually contructed User and Posts models (NO-ORM)
+  - Store User profile images in static folder on server
+  - User Authenication done through secure HTTP only Session cookies
 
 ### Database:
 
