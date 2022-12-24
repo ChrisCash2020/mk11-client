@@ -8,7 +8,11 @@ In the website authenticated users can create, edit, and delete character pages,
 CRUD operations get saved in a JawsDB MySQL database.
 <br>
 <br>
-<a href="https://chriscash2020.github.io/mk11-client/" target="_blank" >Live Demo</a>
+<a href="https://mkwiki11.netlify.app/" target="_blank" >Live Demo</a>
+> Preview
+<p>
+<img src="https://github.com/ChrisCash2020/Images/blob/master/mk11/mk11.gif" />
+</p>
 
 ## Technologies Used:
 
@@ -28,11 +32,6 @@ CRUD operations get saved in a JawsDB MySQL database.
 ### Client-side:
 
 This is the front-end repository
-
-> Preview
-<p>
-<img src="https://github.com/ChrisCash2020/Images/blob/master/mk11/mk11.gif" />
-</p>
 
 <br/>
 
