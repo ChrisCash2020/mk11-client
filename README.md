@@ -1,4 +1,4 @@
-# Mortal Kombat WikiPedia - ReactJs, NodeJs, MySQL, RestAPI
+# Mortal Kombat Wikipedia - ReactJs, NodeJs, MySQL, RestAPI
 
 
 ## Description:
