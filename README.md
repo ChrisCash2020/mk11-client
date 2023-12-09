@@ -3,9 +3,11 @@
 
 ## Description:
 
-This project was made as a way to practice my back-end RestAPI development.
-In the website authenticated users can create, edit, and delete character pages, and all 
-CRUD operations get saved in a JawsDB MySQL database.
+- Architected and launched a Wikipedia platform, leveraging the MVC design pattern, to facilitate character page creation, editing, and deletion for authenticated users.
+- Express and MySQL as the back end and React as the front-end.
+- Strengthened user authentication and server communication by facilitating the exchange of HTTP only session cookies, enhancing security protocols and preserving the
+confidentiality of user data
+
 <br>
 <br>
 <a href="https://mkwiki11.netlify.app/" target="_blank" >Live Demo</a>
