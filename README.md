@@ -7,11 +7,10 @@
 - Express and MySQL as the back end and React as the front-end.
 - Strengthened user authentication and server communication by facilitating the exchange of HTTP only session cookies, enhancing security protocols and preserving the
 confidentiality of user data
-
-<br>
 <br>
 <a href="https://mkwiki11.netlify.app/" target="_blank" >Live Demo</a>
-> Preview
+<br>
+
 <p>
 <img src="https://github.com/ChrisCash2020/Images/blob/master/mk11/mk11.gif" />
 </p>
